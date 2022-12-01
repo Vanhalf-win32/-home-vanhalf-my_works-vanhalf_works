@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru" >
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Hacker News</title>
+        <link type="image/x-icon" href="hacker__news_image/logo.ico" rel="icon">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                margin: 6pt 70pt 0pt 70pt ;
+            }
+            .header {
+                display: flex;
+                align-items: center;
+                background-color: #ff6600;
+                height: 24px;
+                font-family: Verdana, Geneva, sans-serif;
+                font-size: 10pt;
+                padding: 0pt 2pt 0pt 2pt; 
+                
+            }
+            .header__logo {
+                display: flex;
+                border-style: double;
+                border-width: 1px;
+                border-color: white;
+                margin: 0pt 0pt 0pt 0pt;
+            }
+            .header__title {
+                font-weight: bold;
+                padding: 0pt 5pt 0pt 4pt;
+            }
+            .header__button { 
+                display: flex;
+                margin-left: 2pt;
+            }
+            .header__login { 
+                width: 1730px;
+                display: flex;
+                justify-content: end;
+                padding-right: 2pt;
+            }
+            .news {
+                display: flex;
+                flex-direction: column;
+                background-color: #f6f6ef;
+                font-family: Verdana, Geneva, sans-serif;
+                font-size: 10pt; 
+            }
+            .news__block {
+                padding: 10px 0px 0px 9px;
+            }
+            .news__block-comments {
+                font-size: 7pt;
+                color: grey;
+                padding-left: 21px;
+                margin-top: 1px;
+            }
+            .news__block-more {
+                margin: 15px 0px 10px 25px;
+            }
+            .footer { 
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                background-color: #f6f6ef;
+                border-top-style: solid;
+                border-width: 2pt;
+                border-color: rgb(255, 0, 0);   
+            }
+            .footer__button {
+                font-family: Verdana, Geneva, sans-serif;
+                font-size: 8pt;
+                border-right-style: solid;
+                border-color: gray;
+                border-width: 1px; 
+                padding-right: 3px;
+                padding-left: 3px;
+            }
+            .footer__search { 
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #f6f6ef;
+                font-family: Verdana, Geneva, sans-serif;
+                font-size: 10pt;
+                color: grey;
+            }
+            span {
+                color: grey;
+            }
+    
+            </style>
+    </head>
+        <body>
+            <div class="header">
+                <div>
+                    <img class="header__logo" title="logo" src="hacker__news_image/logo.gif"/>
+                </div>
+                <div class="header__title">
+                    <nobr>Hacker News</nobr>  
+                </div>
+                <div class="header__button">
+                     <nobr>new |</nobr>
+                </div>
+                <div class="header__button">
+                    <nobr>past |</nobr>
+                </div>
+                <div class="header__button">
+                    <nobr>comments |</nobr>
+                </div> 
+                <div class="header__button">
+                    <nobr>ask |</nobr>
+                </div>
+                <div class="header__button">
+                    <nobr>show |</nobr>
+                </div>
+                <div class="header__button">
+                    <nobr>jobs |</nobr>
+                </div>
+                <div class="header__button">
+                    <nobr>submit </nobr>
+                </div>
+                <div class="header__login">
+                    login
+                </div>
+            </div>
+                <div class="news">
+                    <div class="news__block">
+                        <span>  1.</span><image title="style" src="hacker__news_image/row.gif">   Tales of the M1 GPU (asahilinux.org)<br>
+                        <div class="news__block-comments">383 points by rawrenstein 3 hours ago | hide | 125 comments</div>
+                    </div>
+                    <div class="news__block"> 
+                        <span>  2.</span><image title="style" src="hacker__news_image/row.gif">  WasmEdge (wasmedge.org)</br>
+                        <div class="news__block-comments">27 points by mkl95 39 minutes ago | hide | discuss</div>
+                    </div>
+                    <div class="news__block">
+                            <span> 3.</span><image title="style" src="hacker__news_image/row.gif">    Photography for geeks (coredump.cx)</br>
+                            <div class="news__block-comments">590 points by excite1997 12 hours ago | hide | 99 comments</div>
+                    </div>       
+                    <div class="news__block">   
+                            <span> 4.</span>.<image title="style" src="hacker__news_image/row.gif">    Cutting-edge tech made this tiny country a major exporter of food (washingtonpost.com) <br>
+                        <div class="news__block-comments">29 points by sambeau 3 hours ago | hide | 17 comments</div>
+                    </div>         
+                    <div class="news__block">   
+                            <span> 5.</span><image title="style" src="hacker__news_image/row.gif"> Building NAS with ZFS, AFP/Samba for Time Machine (2021) (gwlab.page) <br>
+                        <div class="news__block-comments">61 points by tosh 7 hours ago | hide | 38 comments</div>
+                    </div>
+                    <div class="news__block">   
+                            <span>6.</span><image title="style" src="hacker__news_image/row.gif">    The Ultimate Guide to FFmpeg (img.ly) </br>
+                        <div class="news__block-comments">189 points by buss_jan 2 hours ago | hide | 27 comments</div>
+                    </div>
+                    <div class="news__block">  
+                            <span>7.</span><image title="style" src="hacker__news_image/row.gif">    Dynamic types have the potential to be more than "no static types" (buttondown.email/hillelwayne)</br>
+                        <div class="news__block-comments">19 points by azhenley 47 minutes ago | hide | 6 comments</div>
+                    </div>
+                    <div class="news__block">   
+                        <span>8.</span>.<image title="style" src="hacker__news_image/row.gif">    Vision Transformers (ViT) Explained (pinecone.io)</br>
+                        <div class="news__block-comments">74 points by gk1 5 hours ago | hide | 20 comments</div>
+                    </div> 
+                    <div class="news__block">   
+                        <span>9.</span><image title="style" src="hacker__news_image/row.gif">    Dropbox Acquires Boxcryptor’s Assets, to provide client-side encryption (boxcryptor.com)</br>
+                        <div class="news__block-comments">4 points by aborsy 17 minutes ago | hide | 3 comments</div>
+                    </div>
+                    <div class="news__block">  
+                        <span>10.</span><image title="style" src="hacker__news_image/row.gif">   Obsolete Sounds: collection of disappearing sounds and extinct sounds (citiesandmemory.com)</br>
+                        <div class="news__block-comments">240 points by sohkamyung 12 hours ago | hide | 124 comments</div>
+                    </div>
+                     <div class="news__block">   
+                        <span>11.</span><image title="style" src="hacker__news_image/row.gif">   How do transistors work, anyway? (lcamtuf.substack.com)</br>
+                        <div class="news__block-comments">137 points by weinzierl 8 hours ago | hide | 56 comments</div>
+                    </div>
+                     <div class="news__block"> 
+                        <span>12.</span><image title="style" src="hacker__news_image/row.gif">   Google, Epic ink deal to migrate hospital EHRs to the cloud to ramp up use of AI (fiercehealthcare.com)</br>
+                        <div class="news__block-comments">18 points by shishy 46 minutes ago | hide | 17 comments</div>
+                    </div>
+                     <div class="news__block">   
+                        <span>13.</span><image title="style" src="hacker__news_image/row.gif">   The X500 Plus computer case (2013) (linitx.com)</br>
+                        <div class="news__block-comments">21 points by indigodaddy 4 hours ago | hide | 8 comments</div>
+                    </div>
+                     <div class="news__block">  
+                        <span>14.</span><image title="style" src="hacker__news_image/row.gif">   Tales of the M1 GPU (asahilinux.org)</br>
+                        <div class="news__block-comments">383 points by rawrenstein 3 hours ago | hide | 125 comments</div>
+                    </div>
+                     <div class="news__block">  
+                        <span>15.</span><image title="style" src="hacker__news_image/row.gif">   Rereading: The Soul of a New Machine by Tracy Kidder (auxiliarymemory.com)  </br>
+                        <div class="news__block-comments">18 points by markus_zhang 48 minutes ago | hide | 9 comments</div>
+                    </div>  
+                     <div class="news__block">   
+                        <span>16.</span><image title="style" src="hacker__news_image/row.gif">   WebTorrent (webtorrent.io)</br>
+                         <div class="news__block-comments">	205 points by tosh 3 hours ago | hide | 55 comments</div>
+                    </div>
+                    <div class="news__block">
+                        <span>17.</span><image title="style" src="hacker__news_image/row.gif">   Everything I wish I knew when learning C (tmewett.com) <br>
+                        <div class="news__block-comments">69 points by bubblehack3r 1 hour ago | hide | 19 comments</div>
+                    </div>
+                    <div class="news__block">   	
+                        <span>18.</span><image title="style" src="hacker__news_image/row.gif">   Open Source and Saying “No” (connortumbleson.com) </br>
+                        <div class="news__block-comments">43 points by bo0tzz 1 hour ago | hide | 13 comments</div>
+                    </div>
+                    <div class="news__block">
+                        <span>19.</span><image title="style" src="hacker__news_image/row.gif">   Photography for geeks (coredump.cx)</br>
+                            <div class="news__block-comments">590 points by excite1997 12 hours ago | hide | 99 comments</div>
+                    </div>       
+                    <div class="news__block">   
+                        <span>20.</span><image title="style" src="hacker__news_image/row.gif">       Cutting-edge tech made this tiny country a major exporter of food (washingtonpost.com) <br>
+                        <div class="news__block-comments">29 points by sambeau 3 hours ago | hide | 17 comments</div>
+                    </div>         
+                    <div class="news__block">   
+                        <span>21.</span><image title="style" src="hacker__news_image/row.gif">  Building NAS with ZFS, AFP/Samba for Time Machine (2021) (gwlab.page) <br>
+                        <div class="news__block-comments">61 points by tosh 7 hours ago | hide | 38 comments</div>
+                    </div>
+                    <div class="news__block">   
+                        <span>22.</span><image title="style" src="hacker__news_image/row.gif">  The Ultimate Guide to FFmpeg (img.ly) </br>
+                        <div class="news__block-comments">189 points by buss_jan 2 hours ago | hide | 27 comments</div>
+                    </div>
+                    <div class="news__block">  
+                        <span>23.</span><image title="style" src="hacker__news_image/row.gif">  Dynamic types have the potential to be more than "no static types" (buttondown.email/hillelwayne)</br>
+                        <div class="news__block-comments">19 points by azhenley 47 minutes ago | hide | 6 comments</div>
+                    </div>
+                    <div class="news__block">   
+                        <span>24.</span><image title="style" src="hacker__news_image/row.gif">  Vision Transformers (ViT) Explained (pinecone.io)</br>
+                        <div class="news__block-comments">74 points by gk1 5 hours ago | hide | 20 comments</div>
+                    </div> 
+                    <div class="news__block">   
+                        <span>25.</span><image title="style" src="hacker__news_image/row.gif">  Dropbox Acquires Boxcryptor’s Assets, to provide client-side encryption (boxcryptor.com)</br>
+                        <div class="news__block-comments">4 points by aborsy 17 minutes ago | hide | 3 comments</div>
+                    </div>
+                    <div class="news__block">  
+                        <span>26.</span><image title="style" src="hacker__news_image/row.gif">  Obsolete Sounds: collection of disappearing sounds and extinct sounds (citiesandmemory.com)</br>
+                        <div class="news__block-comments">240 points by sohkamyung 12 hours ago | hide | 124 comments</div>
+                    </div>
+                    <div class="news__block">   
+                        <span>27.</span><image title="style" src="hacker__news_image/row.gif">  How do transistors work, anyway? (lcamtuf.substack.com)</br>
+                        <div class="news__block-comments">137 points by weinzierl 8 hours ago | hide | 56 comments</div>
+                    </div>
+                    <div class="news__block"> 
+                        <span>28.</span><image title="style" src="hacker__news_image/row.gif">  Set Adrift (nytimes.com)</br>
+                        <div class="news__block-comments">	55 points by Thevet 3 hours ago | hide | 9 comments</div>
+                    </div>
+                    <div class="news__block">   
+                        <span>29.</span><image title="style" src="hacker__news_image/row.gif">  The Ultimate Guide to FFmpeg (img.ly) </br>
+                        <div class="news__block-comments">189 points by buss_jan 2 hours ago | hide | 27 comments</div>
+                    </div>
+                    <div class="news__block-more">
+                        More
+                    </div>
+                </div>
+            <div class="footer">
+                <div class="footer__button">
+                    Guidelines
+                </div>
+                <div class="footer__button">
+                    FAQ
+                </div>
+                <div class="footer__button">
+                    Lists
+                </div>
+                <div class="footer__button">
+                    API
+                </div>
+                <div class="footer__button">
+                    Security
+                </div>
+                <div class="footer__button">
+                    Legal
+                </div>
+                <div class="footer__button">
+                    Apply to YC
+                </div>
+                <div class="footer__button">
+                    Contact
+                </div>
+            </div>
+            <div class="footer__search">
+                    Search: <input type="text" size="15"/>
+                </div>
+        </body>
+    </head>
+</html>
