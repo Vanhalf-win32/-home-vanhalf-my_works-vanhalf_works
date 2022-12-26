@@ -8,7 +8,6 @@ class MatFunctions {
     function Plus() {
         $this->result = $this->a + $this->b;
     }
-
     function Minus() {
         $this->result = $this->a - $this->b;
     }
@@ -18,7 +17,6 @@ class MatFunctions {
     function Split() {
         $this->result = $this->a / $this->b;
     }
-
 }
 
 $foo = new MatFunctions();
@@ -53,6 +51,4 @@ $matFunction = readline('Insert function (+-*/) : ');
         else 
             echo 'insert correct command!' . PHP_EOL;
         
-
-
 print_r($foo);
